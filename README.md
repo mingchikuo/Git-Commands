@@ -1,7 +1,8 @@
 # Git-Commands
 
-## 基礎操作
 
+
+## 基礎操作
 #### git cat-file "" -t
 查看git object之type。
 
@@ -32,8 +33,9 @@
 #### git status
 查看檔案之狀態。
 
-## 分支操作
 
+
+## 分支操作
 #### git branch
 列出所有分支。
 
