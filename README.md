@@ -72,6 +72,12 @@ Fast Forward，若有其他作者生成新的master則形成3 way merge。
 
 
 
+## 精簡倉庫
+#### tree .git/
+#### git gc
+#### rm -rf .git/hooks/*.sample
+
+
 ## 遠端操作
 #### git remote add origin名 git連結
 連結當前到遠端倉庫，並將使用master冠名為origin名。
@@ -94,7 +100,16 @@ Fast Forward，若有其他作者生成新的master則形成3 way merge。
 #### git branch -vv
 檢查本地與遠端分支相連的情況。
 
+#### git fetch
 #### git merge origin/master
-跟遠端master同步。
+下圖情況時可用來跟遠端master merge後同步。
 ![image](https://i.imgur.com/sm97OqV.png)
+也可以用
+#### git pull 
+一步代替兩步。
+
+#### git fetch
+#### git diff origin/master
+懷疑有conflict時的嚴謹做法。
+
 
