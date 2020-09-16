@@ -94,3 +94,7 @@ Fast Forward，若有其他作者生成新的master則形成3 way merge。
 #### git branch -vv
 檢查本地與遠端分支相連的情況。
 
+#### git merge origin/master
+跟遠端master同步。
+![image](https://i.imgur.com/sm97OqV.png)
+
