@@ -80,25 +80,20 @@ Fast Forward，若有其他作者生成新的master則形成3 way merge。
 
 ## 遠端操作
 
-#### git pull遇到錯誤：error: Your local changes to the following files would be overwritten by merge:解決方法
-`error: Your local changes to the following files would be overwritten by merge:
-
+### git pull遇到錯誤：error: Your local changes to the following files would be overwritten by merge:解決方法
+error: Your local changes to the following files would be overwritten by merge:
 意思是我桌上型電腦上新修改的程式碼的檔案，將會被git伺服器上的程式碼覆蓋；我當然不想剛剛寫的程式碼被覆蓋掉，看了git的手冊，發現可以這樣解決：
 
-方法1：如果你想保留剛才本地修改的程式碼，並把git伺服器上的程式碼pull到本地（本地剛才修改的程式碼將會被暫時封存起來）
-
+#### 方法1：如果你想保留剛才本地修改的程式碼，並把git伺服器上的程式碼pull到本地（本地剛才修改的程式碼將會被暫時封存起來）
 git stash
 git pull origin master
 git stash pop
-
 如此一來，伺服器上的程式碼更新到了本地，而且你本地修改的程式碼也沒有被覆蓋，之後使用add，commit，push 命令即可更新原生代碼到伺服器了。
 
-方法2、如果你想完全地覆蓋本地的程式碼，只保留伺服器端程式碼，則直接回退到上一個版本，再進行pull：
-
+#### 方法2、如果你想完全地覆蓋本地的程式碼，只保留伺服器端程式碼，則直接回退到上一個版本，再進行pull：
 git reset --hard
 git pull origin master
-
-注：其中origin master表示git的主分支。`
+注：其中origin master表示git的主分支。
 
 #### git remote add origin名 git連結
 連結當前到遠端倉庫，並將使用master冠名為origin名。
