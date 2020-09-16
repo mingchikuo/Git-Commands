@@ -88,8 +88,8 @@ Fast Forward，若有其他作者生成新的master則形成3 way merge。
 #### git remote show origin
 檢查遠程分支跟本地分支相連的情況。。
 
-#### git fetch
-同步遠程分支指標。
+#### git fetch --prune
+同步遠程分支指標並修剪過期分支。
 
 #### git branch -vv
 檢查本地與遠端分支相連的情況。
