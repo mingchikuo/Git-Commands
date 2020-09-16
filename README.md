@@ -82,3 +82,15 @@ Fast Forward，若有其他作者生成新的master則形成3 way merge。
 #### github上的倉庫setting中的branches
 可修改預設使用分支。
 
+#### git branch -r 
+查看遠程分支狀態。
+
+#### git remote show origin
+檢查遠程分支跟本地分支相連的情況。。
+
+#### git fetch
+同步遠程分支指標。
+
+#### git branch -vv
+檢查本地與遠端分支相連的情況。
+
