@@ -69,3 +69,16 @@ Fast Forward，若有其他作者生成新的master則形成3 way merge。
 
 #### git rebase master
 有時不能fast forward，會在分支上重整base，但有可能對其他開發者造成損毀。
+
+
+
+## 遠端操作
+#### git remote add origin名 git連結
+連結當前到遠端倉庫，並將使用master冠名為origin名。
+
+#### git remote -v
+查看目前使用的遠端分支名。
+
+#### github上的倉庫setting中的branches
+可修改預設使用分支。
+
